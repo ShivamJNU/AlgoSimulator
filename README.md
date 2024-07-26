@@ -1,4 +1,4 @@
-<h1 align="center"><a target="_blank" href="Web Link">AlgoSimulator</a></h1>
+<h1 align="center"><a target="_blank" href="https://algosimulator.onrender.com/">AlgoSimulator</a></h1>
 
 ## A path finding visulizer
 
