@@ -1,0 +1,186 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif; /* Apply Poppins font to all elements */
+}
+
+:root {
+  --main-bg-color: #333333;;
+  --navbar-bg-color: #0c1116;
+  --primary-color: #0affef;
+  --secondary-color: #4f5d67;
+  --btn-bg-color: #fc6440;
+  --btn-bg-gradient: linear-gradient(135deg, #fc466b, #3f5efb);
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: #ffffff;
+  margin: 0px;
+  overflow: hidden;
+  background-color: var(--main-bg-color);
+  color: #ffffff;
+  font-family: "Roboto", sans-serif; /* Apply Roboto font to body text */
+}
+
+.navbar-dark {
+  background-color: var(--navbar-bg-color);
+  padding: 10px 20px;
+}
+
+#canvas {
+  position: relative;
+  top: 5%;
+  left: 0.1%;
+}
+
+#output {
+  position: relative;
+  text-align: center;
+  top: 60%;
+  background-color: var(--secondary-color);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.nav-link {
+  color: var(--primary-color) !important;
+  box-shadow: 2px 1px 0px 0px var(--navbar-bg-color),
+    -2px -1px 0px 0px var(--secondary-color);
+  border-radius: 25px;
+  width: 160px;
+  text-align: center;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  background: var(--btn-bg-gradient);
+  color: #fff;
+  border: none;
+  font-size: 1em;
+}
+
+.nav-link:hover {
+  box-shadow: 4px 2px 0px 0px var(--navbar-bg-color),
+    -4px -2px 0px 0px var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.dropdown-item {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.panel {
+  position: fixed;
+  padding: 20px;
+  background-color: #e6e6fa;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  cursor: default;
+}
+
+#instructions_panel {
+  top: 30%;
+  left: 25%;
+  width: 50%;
+}
+
+.bg-orange {
+  color: var(--btn-bg-color);
+}
+
+p {
+  margin-bottom: 0.2rem;
+}
+
+#unstyled:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* Small devices && Medium devices */
+@media (min-width: 0px) {
+  .nav-link {
+    width: 100%;
+  }
+  #instructions_panel {
+    top: 13%;
+    left: 6%;
+    width: 85%;
+  }
+  #canvas {
+    padding-left: 0.7%;
+  }
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+  .box {
+    padding-left: 30px;
+  }
+  .nav-link {
+    width: 100px;
+    font-size: 0.75em;
+  }
+  #output {
+    top: 45%;
+  }
+  #instructions_panel {
+    top: 25%;
+    left: 20%;
+    width: 65%;
+  }
+  #canvas {
+    padding-left: 0%;
+  }
+}
+
+/* Large devices */
+@media (min-width: 1050px) {
+  .box {
+    padding-left: 40px;
+  }
+  .nav-link {
+    width: 130px;
+    font-size: 0.9em;
+  }
+  #output {
+    top: 50%;
+  }
+  #instructions_panel {
+    top: 25%;
+    left: 20%;
+    width: 60%;
+  }
+}
+
+/* Extra large devices */
+@media (min-width: 1250px) {
+  .box {
+    padding-left: 80px;
+  }
+  .nav-link {
+    width: 140px;
+    font-size: 1em;
+  }
+  #instructions_panel {
+    top: 30%;
+    left: 25%;
+    width: 50%;
+  }
+}
